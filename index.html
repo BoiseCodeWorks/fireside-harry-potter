@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HarryPotter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="user-select: none">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <h2>Gryffindor</h2>
+        <h4 class="text-center" onclick="app.controllers.hpController.decrement(event)" id="gryffindor">0</h4>
+      </div>
+      <div class="col-3">
+        <h2>Slytherin</h2>
+        <h4 class="text-center" onclick="app.controllers.hpController.decrement(event)" id="slytherin">0</h4>
+      </div>
+      <div class="col-3">
+        <h2>Hufflepuff</h2>
+        <h4 class="text-center" onclick="app.controllers.hpController.decrement(event)" id="hufflepuff">0</h4>
+      </div>
+      <div class="col-3">
+        <h2>Ravenclaw</h2>
+        <h4 class="text-center" onclick="app.controllers.hpController.decrement(event)" id="ravenclaw">0</h4>
+      </div>
+    </div>
+    <div class="row" id="students">
+      <!-- students go here -->
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
